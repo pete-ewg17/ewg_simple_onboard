@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sign-Up/Login Form</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+
+
+
+	<!--FAVICONS-->
+	<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="images/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body class="acad-img">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="form animated zoomInUp">
+
+					<section id="signup">
+
+
+
+						<div class="img-wrapper">
+							<img class="img-responsive" src="images/ewg_logo.svg" alt="EWG Logo" data-tilt>
+						</div>
+
+						<h1>Welcome To Event Workforce Group</h1>
+						<br>
+						<div class="key_holder text-center">
+							<div class="key_holder_row ">
+								<a style=" " class="active "><i class=" fa fa-circle "></i></a>
+								<a style=" "><i class="fa fa-circle "></i></a>
+								<a style=" "><i class="fa fa-circle "></i></a>
+							</div>
+						</div>
+
+
+
+						<form name="form" action="/" method="POST" id="register-form" enctype="multipart/form-data" onsubmit="return validate_form()">
+
+							<!--FIRST FORM-->
+							<fieldset id="first">
+								<p style="margin: 1.6em 0;">Fill out the form below to get set up with Rosterfy</p>
+
+								<div class="field-wrap form-group">
+									<span class="checkbox-inline">
+      							<input type="checkbox" value="">I Agree to <a href="https://rosterfy.co/rosterfy_terms">Terms &amp; Conditions</a>
+    							</span>
+								</div>
+
+								<div class="col-md-6">
+									<div class="field-wrap form-group">
+										<label>
+              Email Address<span class="req">*</span>
+            </label>
+										<input name="email" id="em" data-ref="em-confirm" type="email" required autocomplete="off" />
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="field-wrap form-group">
+
+										<label>
+              Confirm Email Address<span class="req">*</span>
+            </label>
+										<input name="email" id="em" data-ref="em" type="email" required autocomplete="off" />
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="field-wrap form-group">
+										<label>
+              Password<span class="req">*</span>
+            </label>
+										<input type="password" name="password" data-ref="pwd" id="pwd" required autocomplete="off" />
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="field-wrap form-group">
+
+										<label>
+              Confirm Password<span class="req">*</span>
+            </label>
+										<input type="password" name="password" data-ref="pwd-confirm" id="pwd-confirm" required autocomplete="off" />
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="field-wrap form-group">
+										<label>
+              Full Name<span class="req">*</span>
+            </label>
+										<input type="name" name="name" data-ref="name" id="name" required autocomplete="off" />
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="field-wrap form-group">
+										<label>
+              Company<span class="req">*</span>
+            </label>
+										<input type="text" name="company" data-ref="company" id="company" required autocomplete="off" />
+									</div>
+								</div>
+
+
+								<button class="next_btn button btn-lg">Next</button>
+
+							</fieldset>
+
+							<!--SECOND FORM-->
+							<fieldset>
+								<p style="margin: 2.6em 0;">These are the URL settings for your account. <br>It is what you will type in the browser to bring up your customised portal.</p>
+
+								<div class="field-wrap form-group">
+									<label>Your url will be:</label>
+									<input class="sp-input" name="email" id="em" data-ref="em" type="email" autocomplete="off" />
+
+
+									<span>rosterfy.co</span>
+								</div>
+
+								<div class="field-wrap form-group">
+									<label>
+              Contact Phone Number<span class="req">*</span>
+            </label>
+									<input name="number" id="ph-number" data-ref="ph-number" type="text" required autocomplete="off" />
+
+								</div>
+
+								<div class="field-wrap form-group">
+									<select class="form-control" name="" id="">
+										<option value="">Select a Timezone</option>
+										<option value="">------------------</option>
+									<option value="America/Puerto_Rico">America/Atlantic</option>
+									<option value="America/New_York">America/Eastern</option>
+									<option value="America/Chicago">America/Central</option>
+									<option value="America/Denver">America/Mountain</option>
+									<option value="America/Los_Angeles">America/Pacific</option>
+									<option value="America/Anchorage">America/Alaska</option>
+									<option value="Australia/Perth">Australia/Western</option>
+									<option value="Australia/Darwin">Australia/Darwin</option>
+									<option value="Australia/Adelaide">Australia/Adelaide</option>
+									<option value="Australia/Melbourne">Australia/Eastern</option>
+									<option value="Australia/Brisbane">Australia/Queensland</option>
+									<option value="Europe/London">London</option>
+									<option value="NZ">New Zealand</option>
+									<option value="Asia/Singapore">Singapore</option>
+							 </select>
+								</div>
+
+
+								<button type="button" value="previous" class="pre_btn button btn-lg">Previous</button>
+								<button type="button" value="next" class="next_btn button btn-lg"> Next</button>
+
+							</fieldset>
+
+							<!--THIRD FORM-->
+							<fieldset>
+								<p style="margin: 2.6em 0; ">Fill out the form below to get set up with Rosterfy</p>
+
+
+								<div class="field-upload" style="line-height: 0; text-align: left;">
+									<p for="upload">Upload Your Background Image</p>
+									<input class="upload" type="file" id="file" custom="custom-file-input">
+
+								</div>
+
+
+								<div class="field-upload" style="line-height: 0; text-align: left;">
+									<p for="upload">Upload Your Logo Image</p>
+									<input class="upload" type="file" id="file" custom="custom-file-input">
+								</div>
+
+								<button type="button " value="previous " class="pre_btn button btn-lg ">Previous</button>
+								<button type="button " value="submit " class="button btn-lg ">Submit</button>
+
+							</fieldset>
+						</form>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.js " integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin=" anonymous "></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+	<script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js "></script>
+	<script src="js/index.js "></script>
+
+</body>
+
+</html>

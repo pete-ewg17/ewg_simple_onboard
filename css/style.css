@@ -397,4 +397,10 @@ MEDIA QUERIES
 			.field-wrap {
 				margin: 2.0em 0;
 			}
+			
+			.error{				
+				left: 70%;
+    		right: 0%;
+				
+			}
     }

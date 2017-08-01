@@ -27,14 +27,14 @@ $('.form').find('input, textarea').on('keyup blur focus', function (e) {
 });
 
 
-// 
 
-$(function () {
+
+/*$(function () {
 	$("fieldset").each(function () {
 		$(this).css('display', 'none');
 		$("#first").css('display', 'block');
 	});
-});
+});*/
 
 
 // Form Next 

@@ -223,6 +223,20 @@ fieldset {
 	display: block;
 }
 
+.error{
+  position: absolute;
+  bottom: 3px;
+  color: red;
+  font-size: 0.7em;
+  font-style: italic;
+  opacity: 1;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.validate-input {
+	border: 1px solid #c00000;
+}
 
 /*CHECKBOX
 

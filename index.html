@@ -62,6 +62,10 @@
 
 
 						<form name="form" action="/" method="POST" id="register-form" enctype="multipart/form-data" onsubmit="return validate_form()">
+							
+							<input type='hidden' id='sys_account' name="sys_account" value="9313"/>
+							<input type='hidden' id='sys_user' name="sys_user" value="-1"/>
+							<input type='hidden' id='current' name="current" value="0"/>
 
 							<!--FIRST FORM-->
 							<fieldset id="first">
@@ -78,16 +82,19 @@
 										<label>
               Email Address<span class="req">*</span>
             </label>
+										
 										<input name="email" id="em" data-ref="em-confirm" type="email" required autocomplete="off" />
+										<span class="error">Emails do not match</span>
 									</div>
+									
 								</div>
 								<div class="col-md-6">
 									<div class="field-wrap form-group">
-
 										<label>
               Confirm Email Address<span class="req">*</span>
             </label>
 										<input name="email" id="em" data-ref="em" type="email" required autocomplete="off" />
+											<span class="error">Emails do not match</span>
 									</div>
 								</div>
 								<div class="col-md-6">
@@ -95,7 +102,8 @@
 										<label>
               Password<span class="req">*</span>
             </label>
-										<input type="password" name="password" data-ref="pwd" id="pwd" required autocomplete="off" />
+										<input class="validate-input" type="password" name="password" data-ref="pwd" id="pwd" required autocomplete="off" />
+										<span class="error">Passwords don't match</span>
 									</div>
 								</div>
 								<div class="col-md-6">
@@ -105,6 +113,7 @@
               Confirm Password<span class="req">*</span>
             </label>
 										<input type="password" name="password" data-ref="pwd-confirm" id="pwd-confirm" required autocomplete="off" />
+										<span class="error">Passwords don't match</span>
 									</div>
 								</div>
 								<div class="col-md-6">
